@@ -2,7 +2,7 @@
 	"name": "DelimitedText",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "npr_ls_blob",
+			"referenceName": "Ls_Blob",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
