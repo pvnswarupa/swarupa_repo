@@ -1,0 +1,75 @@
+{
+	"name": "source_Ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "npr_ls_blob",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Root": {
+				"type": "string"
+			},
+			"file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().file",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().Root",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "eno",
+				"type": "String"
+			},
+			{
+				"name": "emp_fname",
+				"type": "String"
+			},
+			{
+				"name": "emp_lname",
+				"type": "String"
+			},
+			{
+				"name": "adr_no",
+				"type": "String"
+			},
+			{
+				"name": "salary",
+				"type": "String"
+			},
+			{
+				"name": "created_date",
+				"type": "String"
+			},
+			{
+				"name": "updated_date",
+				"type": "String"
+			},
+			{
+				"name": "e_depno",
+				"type": "String"
+			},
+			{
+				"name": "work_location",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "nprdf",
+	"properties": {
+		"globalParameters": {
+			"RootPath": {
+				"type": "string",
+				"value": " pvnstorageac/adfdemo / Input"
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "355a72de-97f2-4c24-bfa8-32739dcf611b",
+		"tenantId": "c28426c7-0f8a-4f8b-8cdd-7af3f1a66259"
+	}
+}
