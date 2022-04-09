@@ -92,7 +92,10 @@
 											"value": "@variables('FileName ')",
 											"type": "Expression"
 										},
-										"wildcardFileName": "*",
+										"wildcardFileName": {
+											"value": "@activity('Get Metadata').output",
+											"type": "Expression"
+										},
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -138,7 +141,7 @@
 			}
 		],
 		"variables": {
-			"FileName ": {
+			"FileName": {
 				"type": "String"
 			}
 		},
