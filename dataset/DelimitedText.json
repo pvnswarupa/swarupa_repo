@@ -2,7 +2,7 @@
 	"name": "DelimitedText",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Ls_Blob",
+			"referenceName": "npr_ls_blob",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "Output",
+				"fileName": "Employee.csv",
+				"folderPath": "Input",
 				"container": "adfdemo"
 			},
 			"columnDelimiter": ",",
